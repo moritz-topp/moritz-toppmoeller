@@ -636,5 +636,17 @@
 </template>
 
 <script setup lang="ts">
-	const { locale } = useI18n();
+	const { locale, t } = useI18n();
+
+	definePageMeta({
+		i18n: {
+			paths: {
+				en: "/privacy/"
+			}
+		}
+	});
+
+	useSeoMeta({
+		title: t("system.privacy")
+	});
 </script>

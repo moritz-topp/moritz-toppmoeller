@@ -128,4 +128,11 @@
 
 <script setup lang="ts">
 	const { locale } = useI18n();
+	definePageMeta({
+		i18n: {
+			paths: {
+				en: "/legal/"
+			}
+		}
+	});
 </script>

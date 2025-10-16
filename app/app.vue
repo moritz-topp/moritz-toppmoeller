@@ -14,7 +14,7 @@
 
 			<div class="bg-base-100 flex min-h-screen flex-1 flex-col md:w-2/3">
 				<header class="border-base-300 border-b px-6 py-8 text-center md:text-left">
-					<NuxtLink to="/" class="mx-auto block w-full max-w-5xl">
+					<NuxtLink :to="localePath('/')" class="mx-auto block w-full max-w-5xl">
 						<h1 class="my-2 text-3xl font-bold md:text-4xl">Moritz Toppmöller</h1>
 						<p class="text-base opacity-80">{{ t("system.subtitle") }}</p>
 					</NuxtLink>

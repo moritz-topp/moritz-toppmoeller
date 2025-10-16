@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
 	colorMode: {
-		preference: "light",
+		preference: "system",
 		storage: "sessionStorage",
 		dataValue: "theme",
 		storageKey: "nuxt-color-mode"
@@ -14,20 +14,18 @@ export default defineNuxtConfig({
 		strategy: "prefix_except_default",
 		defaultLocale: "de",
 		baseUrl: "https://www.moritz-topp.de/",
+		langDir: "locales",
+		trailingSlash: true,
+		customRoutes: "meta",
 		detectBrowserLanguage: {
 			useCookie: false,
-			alwaysRedirect: false,
+			alwaysRedirect: true,
 			fallbackLocale: "de"
 		},
 		locales: [
 			{ code: "de", language: "de-DE", name: "Deutsch", file: "de.json" },
 			{ code: "en", language: "en-US", name: "English", file: "en.json" }
-		],
-		pages: {
-			impressum: { en: "/imprint" },
-			datenschutz: { en: "/privacy" },
-			agb: { en: "/terms" }
-		}
+		]
 	},
 	linkChecker: {
 		skipInspections: ["link-text", "no-uppercase-chars", "no-underscores"]
@@ -68,6 +66,8 @@ export default defineNuxtConfig({
 		})
 	},
 	site: {
+		url: "https://www.moritz-topp.de",
+		defaultLocale: "de",
 		trailingSlash: true
 	},
 	sitemap: {
