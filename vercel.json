@@ -1,4 +1,4 @@
 {
     "regions": ["fra1"],
-    "trailingSlash": true
+    "trailingSlash": false
 }

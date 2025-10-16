@@ -2,11 +2,11 @@
 	<div class="container">
 		<div class="prose">
 			<nav class="not-prose mb-4 flex flex-wrap gap-2">
-				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb/">{{ t("system.terms") }}</NuxtLinkLocale>
-				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/av/">{{
+				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb">{{ t("system.terms") }}</NuxtLinkLocale>
+				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/av">{{
 					t("system.av")
 				}}</NuxtLinkLocale>
-				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/dsa/">{{
+				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/dsa">{{
 					t("system.dsa")
 				}}</NuxtLinkLocale>
 			</nav>
@@ -268,7 +268,7 @@
 	definePageMeta({
 		i18n: {
 			paths: {
-				en: "/terms/"
+				en: "/terms"
 			}
 		}
 	});

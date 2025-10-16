@@ -13,7 +13,7 @@ export default defineNuxtConfig({
 	i18n: {
 		strategy: "prefix_except_default",
 		defaultLocale: "de",
-		baseUrl: "https://www.moritz-topp.de/",
+		baseUrl: "https://www.moritz-topp.de",
 		langDir: "locales",
 		customRoutes: "meta",
 		detectBrowserLanguage: {
@@ -48,7 +48,7 @@ export default defineNuxtConfig({
 	schemaOrg: {
 		identity: defineOrganization({
 			name: "Moritz Toppmöller",
-			url: "https://www.moritz-topp.de/",
+			url: "https://www.moritz-topp.de",
 			logo: "/apple-touch-icon.png",
 			address: {
 				"@type": "PostalAddress",
@@ -63,8 +63,7 @@ export default defineNuxtConfig({
 	},
 	site: {
 		url: "https://www.moritz-topp.de",
-		defaultLocale: "de",
-		trailingSlash: true
+		defaultLocale: "de"
 	},
 	sitemap: {
 		cacheMaxAgeSeconds: 86400,

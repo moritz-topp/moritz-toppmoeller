@@ -641,7 +641,7 @@
 	definePageMeta({
 		i18n: {
 			paths: {
-				en: "/privacy/"
+				en: "/privacy"
 			}
 		}
 	});

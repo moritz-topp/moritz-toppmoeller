@@ -2,11 +2,11 @@
 	<div class="container">
 		<div class="prose">
 			<nav class="not-prose mb-4 flex flex-wrap gap-2">
-				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb/">{{ t("system.terms") }}</NuxtLinkLocale>
-				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/av/">{{
+				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb">{{ t("system.terms") }}</NuxtLinkLocale>
+				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/av">{{
 					t("system.av")
 				}}</NuxtLinkLocale>
-				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb/dsa/">{{ t("system.dsa") }}</NuxtLinkLocale>
+				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb/dsa">{{ t("system.dsa") }}</NuxtLinkLocale>
 			</nav>
 
 			<h1>Meldebogen nach Art. A16 DSA</h1>
@@ -71,7 +71,7 @@
 					ein Recht auf Widerspruch, auf Datenübertragbarkeit und ein Beschwerderecht bei der zuständigen
 					Aufsichtsbehörde zu. Ferner können Sie die Berichtigung, die Löschung und unter bestimmten Umständen
 					die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten verlangen. Details entnehmen Sie
-					unserer <NuxtLinkLocale to="/datenschutz/" class="underline">Datenschutzerklärung</NuxtLinkLocale>.
+					unserer <NuxtLinkLocale to="/datenschutz" class="underline">Datenschutzerklärung</NuxtLinkLocale>.
 				</p>
 				<button
 					:disabled="send || loading"
@@ -182,7 +182,7 @@
 	definePageMeta({
 		i18n: {
 			paths: {
-				en: "/terms/dsa/"
+				en: "/terms/dsa"
 			}
 		}
 	});

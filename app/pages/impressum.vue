@@ -131,7 +131,7 @@
 	definePageMeta({
 		i18n: {
 			paths: {
-				en: "/legal/"
+				en: "/legal"
 			}
 		}
 	});

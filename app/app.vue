@@ -44,13 +44,13 @@
 						<div class="flex flex-col items-center gap-6 text-center md:flex-row md:justify-between">
 							<div class="flex flex-col gap-2">
 								<nav class="flex flex-wrap gap-3">
-									<NuxtLinkLocale class="link link-hover hover:link-primary" to="/impressum/">{{
+									<NuxtLinkLocale class="link link-hover hover:link-primary" to="/impressum">{{
 										t("system.imprint")
 									}}</NuxtLinkLocale>
-									<NuxtLinkLocale class="link link-hover hover:link-primary" to="/datenschutz/">{{
+									<NuxtLinkLocale class="link link-hover hover:link-primary" to="/datenschutz">{{
 										t("system.privacy")
 									}}</NuxtLinkLocale>
-									<NuxtLinkLocale class="link link-hover hover:link-primary" to="/agb/">{{
+									<NuxtLinkLocale class="link link-hover hover:link-primary" to="/agb">{{
 										t("system.terms")
 									}}</NuxtLinkLocale>
 								</nav>
