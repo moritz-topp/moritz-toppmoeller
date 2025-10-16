@@ -32,7 +32,7 @@ export default defineNuxtConfig({
 	linkChecker: {
 		skipInspections: ["link-text", "no-uppercase-chars", "no-underscores"]
 	},
-	modules: ["@nuxt/eslint", "@nuxt/icon", "@nuxtjs/color-mode", "@nuxtjs/i18n", "@nuxtjs/seo"],
+	modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon", "@nuxtjs/color-mode", "@nuxtjs/i18n", "@nuxtjs/seo"],
 	ogImage: {
 		enabled: false
 	},
@@ -54,7 +54,6 @@ export default defineNuxtConfig({
 	schemaOrg: {
 		identity: defineOrganization({
 			name: "Moritz Toppmöller",
-			description: "Arbeitsgruppe Digitale Medizin der Medizinischen Fakultät OWL der Universität Bielefeld.",
 			url: "https://www.moritz-topp.de/",
 			logo: "/apple-touch-icon.png",
 			address: {

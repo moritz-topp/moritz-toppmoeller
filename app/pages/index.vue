@@ -1,6 +1,6 @@
 <template>
-	<div class="space-y-6">
-		<div class="space-y-6 text-justify text-base">
+	<div class="space-y-5 md:space-y-6">
+		<div class="space-y-4 text-justify text-base md:space-y-6">
 			<p>{{ t("system.description.part1") }}</p>
 			<p>{{ t("system.description.part2") }}</p>
 			<p>{{ t("system.description.part3") }}</p>
@@ -11,7 +11,7 @@
 		<SectionCard v-bind="content.publications" />
 		<SectionCard v-bind="content.events" />
 
-		<div class="grid gap-6 md:grid-cols-2">
+		<div class="grid gap-4 md:grid-cols-2 md:gap-6">
 			<SectionCard v-bind="content.languages" />
 			<SectionCard v-bind="content.interests" />
 		</div>

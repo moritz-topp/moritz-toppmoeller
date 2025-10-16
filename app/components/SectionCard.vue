@@ -1,17 +1,17 @@
 <template>
-	<section class="border-base-300 bg-base-100 rounded-4xl border-2 p-6">
-		<header class="flex items-center gap-3">
-			<div class="bg-base-200 text-primary flex size-12 items-center justify-center rounded-full">
+	<section class="border-base-300 bg-base-100 rounded-4xl border-2 p-4 md:p-6">
+		<header class="flex items-center gap-2 md:gap-3">
+			<div class="bg-base-200 text-primary flex size-10 items-center justify-center rounded-full md:size-12">
 				<Icon :name="props.icon" size="30px" />
 			</div>
 			<h3 class="text-xl font-semibold md:text-2xl">{{ props.title }}</h3>
 		</header>
 
-		<ul class="mt-6 space-y-3">
+		<ul class="mt-4 space-y-2 md:mt-6 md:space-y-3">
 			<li
 				v-for="item in props.items || []"
 				:key="item.id"
-				class="border-base-200 rounded-4xl flex items-start gap-3 border p-3"
+				class="border-base-200 rounded-4xl flex items-start gap-2 border p-2 md:gap-3 md:p-3"
 			>
 				<Icon
 					v-if="item.icon || props.itemIcon"
