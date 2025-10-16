@@ -27,6 +27,17 @@ export default defineNuxtConfig({
 		]
 	},
 	modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon", "@nuxtjs/color-mode", "@nuxtjs/i18n", "@nuxtjs/seo"],
+	nitro: {
+		prerender: {
+			routes: ["/"],
+			crawlLinks: true
+		},
+		routeRules: {
+			"/*.webp": { headers: { "cache-control": "public, max-age=604800, must-revalidate" } },
+			"/favicon*": { headers: { "cache-control": "public, max-age=604800, must-revalidate" } },
+			"/apple-touch-icon*": { headers: { "cache-control": "public, max-age=604800, must-revalidate" } }
+		}
+	},
 	ogImage: {
 		enabled: false
 	},
