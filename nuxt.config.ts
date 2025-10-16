@@ -15,7 +15,7 @@ export default defineNuxtConfig({
 		defaultLocale: "de",
 		baseUrl: "https://www.moritz-topp.de/",
 		langDir: "locales",
-		trailingSlash: true,
+		//trailingSlash: true,
 		//customRoutes: "meta",
 		detectBrowserLanguage: {
 			useCookie: false,
