@@ -1,5 +1,5 @@
 <template>
-	<div class="min-h-screen bg-base-200">
+	<div class="bg-base-200 min-h-screen">
 		<div class="flex flex-col md:flex-row">
 			<aside class="md:w-1/3">
 				<div class="relative top-0 h-64 overflow-hidden md:sticky md:h-screen">
@@ -12,8 +12,8 @@
 				</div>
 			</aside>
 
-			<div class="flex min-h-screen flex-1 flex-col bg-base-100 md:w-2/3">
-				<header class="border-b border-base-300 px-6 py-8 text-center md:text-left">
+			<div class="bg-base-100 flex min-h-screen flex-1 flex-col md:w-2/3">
+				<header class="border-base-300 border-b px-6 py-8 text-center md:text-left">
 					<NuxtLink to="/" class="mx-auto block w-full max-w-5xl">
 						<h1 class="my-2 text-3xl font-bold md:text-4xl">Moritz Toppmöller</h1>
 						<p class="text-base opacity-80">{{ t("system.subtitle") }}</p>
@@ -22,7 +22,7 @@
 						<NuxtLink
 							v-for="link in profileLinks"
 							:key="link.id"
-							class="badge inline-flex items-center gap-2 badge-outline badge-xl text-xs font-medium transition badge-secondary hover:text-primary hover:badge-primary"
+							class="badge badge-outline badge-xl badge-secondary hover:text-primary hover:badge-primary inline-flex items-center gap-2 text-xs font-medium transition"
 							:href="link.href"
 							target="_blank"
 							:aria-label="link.id"
@@ -33,13 +33,13 @@
 					</div>
 				</header>
 
-				<main id="main" class="flex-1 bg-base-200 p-6">
+				<main id="main" class="bg-base-200 flex-1 p-6">
 					<div class="mx-auto w-full max-w-5xl">
 						<NuxtPage />
 					</div>
 				</main>
 
-				<footer class="border-t border-base-300 p-6 text-sm">
+				<footer class="border-base-300 border-t p-6 text-sm">
 					<div class="mx-auto w-full max-w-5xl">
 						<div class="flex flex-col items-center gap-6 text-center md:flex-row md:justify-between">
 							<div class="flex flex-col gap-2">
