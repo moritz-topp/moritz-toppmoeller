@@ -31,11 +31,6 @@ export default defineNuxtConfig({
 		prerender: {
 			routes: ["/"],
 			crawlLinks: true
-		},
-		routeRules: {
-			"/*.webp": { headers: { "cache-control": "public, max-age=604800, must-revalidate" } },
-			"/favicon*": { headers: { "cache-control": "public, max-age=604800, must-revalidate" } },
-			"/apple-touch-icon*": { headers: { "cache-control": "public, max-age=604800, must-revalidate" } }
 		}
 	},
 	ogImage: {
