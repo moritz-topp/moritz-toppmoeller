@@ -31,12 +31,6 @@ export default defineNuxtConfig({
 		skipInspections: ["link-text", "no-uppercase-chars", "no-underscores"]
 	},
 	modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon", "@nuxtjs/color-mode", "@nuxtjs/i18n", "@nuxtjs/seo"],
-	nitro: {
-		prerender: {
-			routes: ["/", "/en/", "/sitemap_index.xml", "/robots.txt"],
-			crawlLinks: true
-		}
-	},
 	ogImage: {
 		enabled: false
 	},
