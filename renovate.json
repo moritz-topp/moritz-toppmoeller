@@ -5,7 +5,6 @@
 		"enabled": true,
 		"schedule": ["after 9pm on sunday", "before 9am on monday"]
 	},
-	"automergeSchedule": ["after 10pm on monday, tuesday, wednesday, thursday, sunday", "before 8am every weekday"],
 	"schedule": ["after 10pm on monday, tuesday, wednesday, thursday, sunday", "before 8am every weekday"],
 	"timezone": "Europe/Berlin",
 	"packageRules": [

@@ -17,7 +17,7 @@ export default withNuxt(
 					trailingComma: "none",
 					vueIndentScriptAndStyle: true,
 					plugins: ["prettier-plugin-tailwindcss"],
-					tailwindStylesheet: "./assets/tailwind.css",
+					tailwindStylesheet: "~/app/assets/tailwind.css",
 				},
 			],
 		},
@@ -35,7 +35,7 @@ export default withNuxt(
 		},
 	},
 	{
-		ignores: ["*-lock.yaml", "node-modules/**", ".nuxt/**"],
+		ignores: ["*-lock.yaml", "node_modules/**", ".nuxt/**", ".output/**"],
 	},
 	eslintPluginPrettierRecommended,
 );
