@@ -1,0 +1,87 @@
+import { defineOrganization } from "nuxt-schema-org/schema";
+import { defineNuxtConfig } from "nuxt/config";
+import tailwindcss from "@tailwindcss/vite";
+
+export default defineNuxtConfig({
+	colorMode: {
+		preference: "light",
+		storage: "sessionStorage",
+		dataValue: "theme",
+		storageKey: "nuxt-color-mode"
+	},
+	css: ["~/assets/tailwind.css"],
+	i18n: {
+		strategy: "prefix_except_default",
+		defaultLocale: "de",
+		baseUrl: "https://www.moritz-topp.de/",
+		detectBrowserLanguage: {
+			useCookie: false,
+			alwaysRedirect: false,
+			fallbackLocale: "de"
+		},
+		locales: [
+			{ code: "de", language: "de-DE", name: "Deutsch", file: "de.json" },
+			{ code: "en", language: "en-US", name: "English", file: "en.json" }
+		],
+		pages: {
+			impressum: { en: "/imprint" },
+			datenschutz: { en: "/privacy" },
+			agb: { en: "/terms" }
+		}
+	},
+	linkChecker: {
+		skipInspections: ["link-text", "no-uppercase-chars", "no-underscores"]
+	},
+	modules: ["@nuxt/eslint", "@nuxt/icon", "@nuxtjs/color-mode", "@nuxtjs/i18n", "@nuxtjs/seo"],
+	ogImage: {
+		enabled: false
+	},
+	robots: {
+		blockNonSeoBots: true,
+		credits: false,
+		disallow: ["/_nuxt/*"]
+	},
+	runtimeConfig: {
+		mail: {
+			host: "",
+			port: 465,
+			user: "",
+			pass: "",
+			to: "",
+			from: ""
+		}
+	},
+	schemaOrg: {
+		identity: defineOrganization({
+			name: "Moritz Toppmöller",
+			description: "Arbeitsgruppe Digitale Medizin der Medizinischen Fakultät OWL der Universität Bielefeld.",
+			url: "https://www.moritz-topp.de/",
+			logo: "/apple-touch-icon.png",
+			address: {
+				"@type": "PostalAddress",
+				streetAddress: "Nordhorner Str. 33",
+				addressLocality: "Gütersloh",
+				addressRegion: "NRW",
+				postalCode: "33335",
+				addressCountry: "DE"
+			},
+			email: "info@moritz-topp.de"
+		})
+	},
+	site: {
+		trailingSlash: true
+	},
+	sitemap: {
+		cacheMaxAgeSeconds: 86400,
+		credits: false,
+		xslColumns: [{ label: "URL", width: "100%" }],
+		xslTips: false
+	},
+	typescript: {
+		typeCheck: true
+	},
+	vite: {
+		plugins: [tailwindcss()]
+	},
+	compatibilityDate: "2025-10-13"
+});

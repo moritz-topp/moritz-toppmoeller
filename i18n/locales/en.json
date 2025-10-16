@@ -1,0 +1,87 @@
+{
+    "system": {
+		"title": "Moritz Toppmöller — Health Informatics & IT Consulting",
+        "subtitle": "Digital Medicine & Health Informatics - IT Consulting, Hosting",
+        "description": {
+            "part1": "I was fascinated by the world of technology from an early age, especially the connection between people and digital innovation.",
+			"part2": "After several years of self-employment, during which I supported companies with digital challenges and continue to do so, I decided to embark on a new path: medical informatics and digital medicine.",
+            "part3": "Today, I am conducting research and continuing my education in this forward-looking field, at the interface of technology, medicine, and research. My goal is to design digital systems that are not only efficient but also humane. With my experience in IT practice and my passion for the digital health world, I want to build bridges between modern technology and real medical benefits."
+        } ,
+        "language": "Select language",
+        "theme": "Change display (light/dark)",
+        "imprint": "Legal notice",
+        "privacy": "Privacy policy",
+        "terms": "Terms and conditions",
+		"av": "Data processing agreement",
+		"dsa": "Notification pursuant to Art. 16 DSA"
+    } ,
+    "education": {
+        "title": "Education",
+        "items": {
+            "masters": {
+                "text": "M.Sc. Medical Informatics",
+                "subline": "UMIT Tirol (ongoing)"
+            } ,
+            "bachelor": {
+                "text": "B.Sc. Computer Science (NF: Computational Linguistics & Text Technology)",
+                "subline": "University of Bielefeld (2025)"
+            }
+        }
+    } ,
+    "events": {
+        "title": "Trade fairs & conferences",
+        "items": {
+            "future": {
+                "text": "Further trade fairs and conferences in planning",
+                "subline": "Dates & locations to follow"
+            }
+        }
+    },
+	"experience": {
+        "title": "Experience",
+        "items": {
+            "hiwi": {
+                "text": "Research assistant",
+                "subline": "Digital Medicine Working Group - OWL Medical Faculty - Bielefeld University (2025-present)"
+			},
+            "freelance": {
+                "text": "Freelancer in web design, IT consulting & hosting solutions",
+                "subline": "Gütersloh, Bielefeld & Remote (2020-present)"
+            } ,
+            "bits": {
+                "text": "Student assistant",
+                "subline": "Bielefeld IT Service Center - Bielefeld University (2019-2025)"
+            }
+        }
+    } ,
+    "interests": {
+        "title": "Interests",
+        "items": {
+            "digitalMedicine": "Digital Medicine",
+            "medicalInformatics": "Medical Informatics",
+            "webDev": "Web Design & Hosting"
+        }
+    } ,
+    "languages": {
+        "title": "Languages",
+        "items": {
+            "de": {
+                "text": "German",
+                "subline": "Native language"
+            } ,
+            "en": {
+                "text": "English",
+                "subline": "Business fluent"
+            }
+        }
+    },
+    "publications": {
+        "title": "Publications",
+        "papers": {
+			"microgravity": {
+                "title": "Development of an Automated Image Processing Method for the Qualitative and Quantitative Analysis of Movements in Videos of People Under Microgravity Conditions",
+                "subline": "Bachelor's thesis · Bielefeld University (2025)"
+            }
+        }
+    }
+}

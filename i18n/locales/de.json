@@ -1,0 +1,87 @@
+{
+	"system": {
+		"title": "Moritz Toppmöller — Medizinische Informatik & IT-Beratung",
+		"subtitle": "Digitale Medizin & Medizinische Informatik - IT-Beratung, Hosting",
+		"description": {
+			"part1": "Schon früh hat mich die Welt der Technologie fasziniert, insbesondere die Verbindung zwischen Menschen und digitaler Innovation.",
+			"part2": "Nach mehreren Jahren in der Selbständigkeit in denen ich Unternehmen bei digitalen Herausforderungen unterstützt habe und auch noch immer tue, habe ich mich entschieden, einen neuen Weg einzuschlagen: Medizinische Informatik und Digitale Medizin.",
+			"part3": "Heute forsche und bilde ich mich in diesem zukunftsweisenden Bereich weiter, an der Schnittstelle von Technologie, Medizin und Forschung. Mein Ziel ist es, digitale Systeme zu gestalten, die nicht nur effizient, sondern auch menschlich sind. Mit meiner Erfahrung aus der IT-Praxis und meiner Leidenschaft für die digitale Gesundheitswelt möchte ich Brücken schlagen, zwischen moderner Technologie und echtem medizinischen Nutzen."
+		},
+		"language": "Sprache wählen",
+		"theme": "Darstellung wechseln (Hell/Dunkel)",
+		"imprint": "Impressum",
+		"privacy": "Datenschutzerklärung",
+		"terms": "AGB",
+		"av": "Auftragsverarbeitungsvertrag",
+		"dsa": "Meldung nach Art. 16 DSA"
+	},
+	"education": {
+		"title": "Bildung",
+		"items": {
+			"masters": {
+				"text": "M.Sc. Medizinische Informatik",
+				"subline": "UMIT Tirol (laufend)"
+			},
+			"bachelor": {
+				"text": "B.Sc. Informatik (NF: Computerlinguistik & Texttechnologie)",
+				"subline": "Universität Bielefeld (2025)"
+			}
+		}
+	},
+	"events": {
+		"title": "Messen & Tagungen",
+		"items": {
+			"future": {
+				"text": "Weitere Fachmessen und Tagungen in Planung",
+				"subline": "Termine & Orte folgen"
+			}
+		}
+	},
+	"experience": {
+		"title": "Erfahrung",
+		"items": {
+			"hiwi": {
+				"text": "Wissenschaftliche Hilfskraft",
+				"subline": "AG Digitale Medizin - Medizinische Fakultät OWL - Universität Bielefeld (2025-heute)"
+			},
+			"freelance": {
+				"text": "Selbständig mit Webgestaltung, IT-Beratung & Hosting-Lösungen",
+				"subline": "Gütersloh, Bielefeld & Remote (2020-heute)"
+			},
+			"bits": {
+				"text": "Studentische Hilfskraft",
+				"subline": "Bielefelder IT-Servicezentrum - Universität Bielefeld (2019-2025)"
+			}
+		}
+	},
+	"interests": {
+		"title": "Interessen",
+		"items": {
+			"digitalMedicine": "Digitale Medizin",
+			"medicalInformatics": "Medizinische Informatik",
+			"webDev": "Webgestaltung & Hosting"
+		}
+	},
+	"languages": {
+		"title": "Sprachen",
+		"items": {
+			"de": {
+				"text": "Deutsch",
+				"subline": "Muttersprache"
+			},
+			"en": {
+				"text": "Englisch",
+				"subline": "Beruflich verhandlungssicher"
+			}
+		}
+	},
+	"publications": {
+		"title": "Veröffentlichungen",
+		"papers": {
+			"microgravity": {
+				"title": "Development of an Automated Image Processing Method for the Qualitative and Quantitative Analysis of Movements in Videos of People Under Microgravity Conditions",
+				"subline": "Bachelorarbeit · Universität Bielefeld (2025)"
+			}
+		}
+	}
+}
