@@ -8,6 +8,7 @@
 @plugin "daisyui" {
 	/* Limit themes to light and dark with sensible defaults */
 	themes: light --default, dark --prefersdark;
+	exclude: properties;
 }
 
 /* Light theme */

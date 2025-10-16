@@ -7,7 +7,7 @@
 						src="/hero.webp"
 						alt="Hintergrundbild"
 						class="h-full w-full object-cover object-top md:object-center"
-						loading="lazy"
+						loading="eager"
 					/>
 				</div>
 			</aside>
