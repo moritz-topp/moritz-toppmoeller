@@ -14,10 +14,10 @@
 
 			<div class="bg-base-100 flex min-h-screen flex-1 flex-col md:w-2/3">
 				<header class="border-base-300 border-b px-6 py-8 text-center md:text-left">
-					<NuxtLink :to="localePath('/')" class="mx-auto block w-full max-w-5xl">
+					<NuxtLinkLocale to="/" class="mx-auto block w-full max-w-5xl">
 						<h1 class="my-2 text-3xl font-bold md:text-4xl">Moritz Toppmöller</h1>
 						<p class="text-base opacity-80">{{ t("system.subtitle") }}</p>
-					</NuxtLink>
+					</NuxtLinkLocale>
 					<div class="mt-4 flex flex-wrap justify-center gap-2 md:justify-start">
 						<NuxtLink
 							v-for="link in profileLinks"
@@ -44,19 +44,15 @@
 						<div class="flex flex-col items-center gap-6 text-center md:flex-row md:justify-between">
 							<div class="flex flex-col gap-2">
 								<nav class="flex flex-wrap gap-3">
-									<NuxtLink
-										class="link link-hover hover:link-primary"
-										:to="localePath('impressum')"
-										>{{ t("system.imprint") }}</NuxtLink
-									>
-									<NuxtLink
-										class="link link-hover hover:link-primary"
-										:to="localePath('datenschutz')"
-										>{{ t("system.privacy") }}</NuxtLink
-									>
-									<NuxtLink class="link link-hover hover:link-primary" :to="localePath('agb')">{{
+									<NuxtLinkLocale class="link link-hover hover:link-primary" to="/impressum/">{{
+										t("system.imprint")
+									}}</NuxtLinkLocale>
+									<NuxtLinkLocale class="link link-hover hover:link-primary" to="/datenschutz/">{{
+										t("system.privacy")
+									}}</NuxtLinkLocale>
+									<NuxtLinkLocale class="link link-hover hover:link-primary" to="/agb/">{{
 										t("system.terms")
-									}}</NuxtLink>
+									}}</NuxtLinkLocale>
 								</nav>
 							</div>
 
@@ -119,7 +115,6 @@
 
 <script setup lang="ts">
 	const { t, locale } = useI18n();
-	const localePath = useLocalePath();
 	const switchLocalePath = useSwitchLocalePath();
 
 	useSeoMeta({

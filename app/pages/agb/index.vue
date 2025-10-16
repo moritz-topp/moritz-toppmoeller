@@ -2,13 +2,13 @@
 	<div class="container">
 		<div class="prose">
 			<nav class="not-prose mb-4 flex flex-wrap gap-2">
-				<NuxtLink class="btn btn-xs btn-primary" :to="localePath('/agb/')">{{ t("system.terms") }}</NuxtLink>
-				<NuxtLink class="btn btn-outline btn-xs btn-primary" :to="localePath('/agb/av/')">{{
+				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb/">{{ t("system.terms") }}</NuxtLinkLocale>
+				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/av/">{{
 					t("system.av")
-				}}</NuxtLink>
-				<NuxtLink class="btn btn-outline btn-xs btn-primary" :to="localePath('/agb/dsa/')">{{
+				}}</NuxtLinkLocale>
+				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/dsa/">{{
 					t("system.dsa")
-				}}</NuxtLink>
+				}}</NuxtLinkLocale>
 			</nav>
 
 			<h1>Allgemeine Geschäftsbedingungen</h1>
@@ -260,7 +260,6 @@
 
 <script setup lang="ts">
 	const { t } = useI18n();
-	const localePath = useLocalePath();
 
 	useSeoMeta({
 		title: t("system.terms")

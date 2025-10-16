@@ -23,6 +23,7 @@
 						v-if="item.href"
 						:href="item.href"
 						target="_blank"
+						external
 						class="hover:text-primary font-semibold leading-snug transition"
 					>
 						{{ item.text }}

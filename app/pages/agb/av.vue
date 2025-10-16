@@ -2,13 +2,11 @@
 	<div class="container">
 		<div class="prose">
 			<nav class="not-prose mb-4 flex flex-wrap gap-2">
-				<NuxtLink class="btn btn-outline btn-xs btn-primary" :to="localePath('/agb/')">{{
-					t("system.terms")
-				}}</NuxtLink>
-				<NuxtLink class="btn btn-xs btn-primary" :to="localePath('/agb/av/')">{{ t("system.av") }}</NuxtLink>
-				<NuxtLink class="btn btn-outline btn-xs btn-primary" :to="localePath('/agb/dsa/')">{{
+				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb/">{{ t("system.terms") }}</NuxtLinkLocale>
+				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb/av/">{{ t("system.av") }}</NuxtLinkLocale>
+				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/dsa/">{{
 					t("system.dsa")
-				}}</NuxtLink>
+				}}</NuxtLinkLocale>
 			</nav>
 
 			<h1>Auftragverarbeitungsvertrag</h1>
@@ -392,9 +390,6 @@
 			<p>Leistung: Hosting und Infrastruktur</p>
 			<p>Ort der Leistungserbingung: Frankfurt, Stockholm (Schweden), Paris (Frankreich), Dublin (Irland)</p>
 			<span class="divider divider-primary" />
-			<!---->
-			<!---->
-			<!---->
 			<h1>Meldebogen nach Art. A16 DSA</h1>
 		</div>
 	</div>
@@ -402,7 +397,6 @@
 
 <script setup lang="ts">
 	const { t } = useI18n();
-	const localePath = useLocalePath();
 
 	definePageMeta({
 		i18n: {
