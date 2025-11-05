@@ -19,11 +19,11 @@
 </template>
 
 <script setup lang="ts">
-	const { t } = useI18n();
+	const { t } = useI18n()
 
 	useSeoMeta({
-		titleTemplate: t("system.title")
-	});
+		titleTemplate: t("system.title"),
+	})
 
 	const content = {
 		education: {
@@ -34,14 +34,14 @@
 				{
 					id: "masters",
 					text: t("education.items.masters.text"),
-					subline: t("education.items.masters.subline")
+					subline: t("education.items.masters.subline"),
 				},
 				{
 					id: "bachelor",
 					text: t("education.items.bachelor.text"),
-					subline: t("education.items.bachelor.subline")
-				}
-			]
+					subline: t("education.items.bachelor.subline"),
+				},
+			],
 		},
 		experience: {
 			title: t("experience.title"),
@@ -51,19 +51,19 @@
 				{
 					id: "hiwi",
 					text: t("experience.items.hiwi.text"),
-					subline: t("experience.items.hiwi.subline")
+					subline: t("experience.items.hiwi.subline"),
 				},
 				{
 					id: "freelance",
 					text: t("experience.items.freelance.text"),
-					subline: t("experience.items.freelance.subline")
+					subline: t("experience.items.freelance.subline"),
 				},
 				{
 					id: "bits",
 					text: t("experience.items.bits.text"),
-					subline: t("experience.items.bits.subline")
-				}
-			]
+					subline: t("experience.items.bits.subline"),
+				},
+			],
 		},
 		publications: {
 			title: t("publications.title"),
@@ -73,9 +73,9 @@
 				{
 					text: t("publications.papers.microgravity.title"),
 					subline: t("publications.papers.microgravity.subline"),
-					href: "https://doi.org/10.4119/unibi/3002766"
-				}
-			]
+					href: "https://doi.org/10.4119/unibi/3002766",
+				},
+			],
 		},
 		events: {
 			title: t("events.title"),
@@ -85,9 +85,9 @@
 				{
 					id: "future",
 					text: t("events.items.future.text"),
-					subline: t("events.items.future.subline")
-				}
-			]
+					subline: t("events.items.future.subline"),
+				},
+			],
 		},
 		languages: {
 			title: t("languages.title"),
@@ -97,14 +97,14 @@
 				{
 					id: "de",
 					text: t("languages.items.de.text"),
-					subline: t("languages.items.de.subline")
+					subline: t("languages.items.de.subline"),
 				},
 				{
 					id: "en",
 					text: t("languages.items.en.text"),
-					subline: t("languages.items.en.subline")
-				}
-			]
+					subline: t("languages.items.en.subline"),
+				},
+			],
 		},
 		interests: {
 			title: t("interests.title"),
@@ -113,8 +113,8 @@
 			items: [
 				{ id: "digitalMedicine", text: t("interests.items.digitalMedicine") },
 				{ id: "medicalInformatics", text: t("interests.items.medicalInformatics") },
-				{ id: "webDev", text: t("interests.items.webDev") }
-			]
-		}
-	};
+				{ id: "webDev", text: t("interests.items.webDev") },
+			],
+		},
+	}
 </script>

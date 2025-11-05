@@ -1,41 +1,43 @@
-import withNuxt from "./.nuxt/eslint.config.mjs";
-import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
+import antfu from "@antfu/eslint-config"
+import tailwind from "eslint-plugin-tailwindcss"
+
+import withNuxt from "./.nuxt/eslint.config.mjs"
 
 export default withNuxt(
+	antfu({
+		formatters: true,
+		stylistic: {
+			indent: "tab",
+			quotes: "double",
+		},
+		vue: {
+			a11y: false,
+			overrides: {
+				"no-alert": "off",
+				"no-console": "off",
+				"vue/script-indent": [
+					"error",
+					"tab",
+					{
+						baseIndent: 1,
+					},
+				],
+				"style/indent": "off",
+				"vue/block-order": [
+					"error",
+					{
+						order: ["template", "script", "style"],
+					},
+				],
+			},
+		},
+	}),
+	...tailwind.configs["flat/recommended"],
 	{
-		files: ["**/*.js", "**/*.ts", "**/*.vue"],
-		rules: {
-			"style/indent": "off",
-			"prettier/prettier": [
-				"error",
-				{
-					bracketSpacing: true,
-					printWidth: 120,
-					singleQuote: false,
-					semi: true,
-					tabWidth: 4,
-					trailingComma: "none",
-					vueIndentScriptAndStyle: true,
-					plugins: ["prettier-plugin-tailwindcss"],
-					tailwindStylesheet: "~/app/assets/tailwind.css",
-				},
-			],
+		settings: {
+			tailwindcss: {
+				config: `${import.meta.dirname}/app/assets/tailwind.css`,
+			},
 		},
 	},
-	{
-		files: ["**/*.yml", "**/*.yaml"],
-		rules: {
-			"prettier/prettier": [
-				"error",
-				{
-					tabWidth: 2,
-					useTabs: false,
-				},
-			],
-		},
-	},
-	{
-		ignores: ["*-lock.yaml", "node_modules/**", ".nuxt/**", ".output/**"],
-	},
-	eslintPluginPrettierRecommended,
-);
+)

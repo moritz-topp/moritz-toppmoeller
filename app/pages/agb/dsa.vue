@@ -2,11 +2,17 @@
 	<div class="container">
 		<div class="prose">
 			<nav class="not-prose mb-4 flex flex-wrap gap-2">
-				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb">{{ t("system.terms") }}</NuxtLinkLocale>
-				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/av">{{
-					t("system.av")
-				}}</NuxtLinkLocale>
-				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb/dsa">{{ t("system.dsa") }}</NuxtLinkLocale>
+				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb">
+					{{ t("system.terms") }}
+				</NuxtLinkLocale>
+				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/av">
+					{{
+						t("system.av")
+					}}
+				</NuxtLinkLocale>
+				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb/dsa">
+					{{ t("system.dsa") }}
+				</NuxtLinkLocale>
 			</nav>
 
 			<h1>Meldebogen nach Art. A16 DSA</h1>
@@ -19,7 +25,7 @@
 					<textarea
 						v-model="dsa.info"
 						required
-						class="textarea textarea-bordered textarea-primary w-full"
+						class="textarea w-full textarea-primary"
 						placeholder="..."
 						aria-labelledby="dsa-info-label"
 					/>
@@ -31,7 +37,7 @@
 				<div class="w-full md:px-4">
 					<textarea
 						v-model="dsa.address"
-						class="textarea textarea-bordered textarea-primary w-full"
+						class="textarea w-full textarea-primary"
 						placeholder="..."
 						aria-labelledby="dsa-address-label"
 					/>
@@ -43,7 +49,7 @@
 				<div class="w-full md:px-4">
 					<textarea
 						v-model="dsa.name"
-						class="textarea textarea-bordered textarea-primary w-full"
+						class="textarea w-full textarea-primary"
 						placeholder="..."
 						aria-labelledby="dsa-name-label"
 					/>
@@ -71,12 +77,14 @@
 					ein Recht auf Widerspruch, auf Datenübertragbarkeit und ein Beschwerderecht bei der zuständigen
 					Aufsichtsbehörde zu. Ferner können Sie die Berichtigung, die Löschung und unter bestimmten Umständen
 					die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten verlangen. Details entnehmen Sie
-					unserer <NuxtLinkLocale to="/datenschutz" class="underline">Datenschutzerklärung</NuxtLinkLocale>.
+					unserer <NuxtLinkLocale to="/datenschutz" class="underline">
+						Datenschutzerklärung
+					</NuxtLinkLocale>.
 				</p>
 				<button
 					:disabled="send || loading"
 					:class="send ? 'text-primary bg-white' : ''"
-					class="hover:text-primary mx-auto my-4 rounded border border-white px-4 py-2 transition hover:bg-white"
+					class="mx-auto my-4 rounded border border-white px-4 py-2 transition hover:bg-white hover:text-primary"
 					type="submit"
 				>
 					<span v-if="loading">...</span>
@@ -87,7 +95,7 @@
 				</button>
 			</form>
 
-			<hr />
+			<hr>
 
 			<h1>AGB-Inhaltemoderation</h1>
 			<p>
@@ -125,11 +133,11 @@
 			<h2>3. Was passiert mit verbotenen Inhalten?</h2>
 			<p>
 				Wenn der begründete Verdacht besteht, dass ein Inhalt gegen die hier genannten Regeln verstößt, gehen
-				wir wie folgt vor: <br />
-				<b>Sperrung:</b> Der betroffene Inhalt wird zunächst unverzüglich gesperrt. <br />
+				wir wie folgt vor: <br>
+				<b>Sperrung:</b> Der betroffene Inhalt wird zunächst unverzüglich gesperrt. <br>
 				<b>Stellungnahmefrist:</b> Sofern uns die Kontaktdaten vorliegen, werden wir den Urheber des Inhalts
 				kontaktieren und ihm eine angemessene Frist zur Stellungnahme einräumen. Sofern der Urheber innerhalb
-				der Frist keine Stellung bezieht, wird der Inhalt gelöscht. <br />
+				der Frist keine Stellung bezieht, wird der Inhalt gelöscht. <br>
 				<b>Abschließende Entscheidung:</b> Sofern der Urheber Stellung bezieht oder eine Kontaktaufnahme zum
 				Urheber nicht möglich ist, werden wir den Sachverhalt auf Grundlage der vorhandenen Informationen
 				bewerten und entscheiden, welche Maßnahmen wir ergreifen. Hierbei sind insbesondere folgende Maßnahmen
@@ -177,35 +185,35 @@
 </template>
 
 <script setup lang="ts">
-	const { t } = useI18n();
+	const { t } = useI18n()
 
 	definePageMeta({
 		i18n: {
 			paths: {
-				en: "/terms/dsa"
-			}
-		}
-	});
+				en: "/terms/dsa",
+			},
+		},
+	})
 
 	useSeoMeta({
-		title: t("system.dsa")
-	});
+		title: t("system.dsa"),
+	})
 
 	const dsa = ref<DsaPayload>({
 		info: "",
 		address: "",
-		name: ""
-	});
+		name: "",
+	})
 
-	const send = ref(false);
-	const loading = ref(false);
-	const sendMail = async () => {
-		loading.value = true;
+	const send = ref(false)
+	const loading = ref(false)
+	async function sendMail() {
+		loading.value = true
 		await $fetch("/api/dsa", {
 			method: "POST",
-			body: dsa.value
-		});
-		send.value = true;
-		loading.value = false;
-	};
+			body: dsa.value,
+		})
+		send.value = true
+		loading.value = false
+	}
 </script>

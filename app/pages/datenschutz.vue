@@ -56,15 +56,11 @@
 				verarbeitet. Hierbei k&ouml;nnen auch personenbezogene Daten in die USA &uuml;bermittelt werden. Die
 				Daten&uuml;bertragung in die USA wird auf die EU-Standardvertragsklauseln gest&uuml;tzt. Details finden
 				Sie hier:
-				<a href="https://vercel.com/legal/dpa" target="_blank" rel="noopener noreferrer"
-					>https://vercel.com/legal/dpa</a
-				>.
+				<a href="https://vercel.com/legal/dpa" target="_blank" rel="noopener noreferrer">https://vercel.com/legal/dpa</a>.
 			</p>
 			<p>
 				Weitere Informationen entnehmen Sie der Datenschutzerkl&auml;rung von Vercel:
-				<a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer"
-					>https://vercel.com/legal/privacy-policy</a
-				>.
+				<a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">https://vercel.com/legal/privacy-policy</a>.
 			</p>
 			<p>
 				Die Verwendung von Vercel erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein
@@ -85,9 +81,7 @@
 			<p>Anbieter ist die Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen (nachfolgend Hetzner).</p>
 			<p>
 				Details entnehmen Sie der Datenschutzerkl&auml;rung von Hetzner:
-				<a href="https://www.hetzner.com/de/legal/privacy-policy/" target="_blank" rel="noopener noreferrer"
-					>https://www.hetzner.com/de/legal/privacy-policy/</a
-				>.
+				<a href="https://www.hetzner.com/de/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">https://www.hetzner.com/de/legal/privacy-policy/</a>.
 			</p>
 			<p>
 				Die Verwendung von Hetzner erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein
@@ -126,14 +120,14 @@
 			<h3>Hinweis zur verantwortlichen Stelle</h3>
 			<p>Die verantwortliche Stelle f&uuml;r die Datenverarbeitung auf dieser Website ist:</p>
 			<p>
-				Moritz Toppm&ouml;ller<br />
-				Nordhorner Str. 33<br />
-				33335 G&uuml;tersloh<br />
+				Moritz Toppm&ouml;ller<br>
+				Nordhorner Str. 33<br>
+				33335 G&uuml;tersloh<br>
 				Deutschland
 			</p>
 
 			<p>
-				Telefon: +491707650817<br />
+				Telefon: +491707650817<br>
 				E-Mail: info@moritz-topp.de
 			</p>
 			<p>
@@ -382,15 +376,11 @@
 				When you visit our website, your personal data will be processed on the Vercel servers . Personal data
 				may also be transmitted to the USA. The data transfer to the USA is based on the EU standard contractual
 				clauses. You can find details at here:
-				<a href="https://vercel.com/legal/dpa" target="_blank" rel="noopener noreferrer"
-					>https://vercel.com/legal/dpa</a
-				>.
+				<a href="https://vercel.com/legal/dpa" target="_blank" rel="noopener noreferrer">https://vercel.com/legal/dpa</a>.
 			</p>
 			<p>
 				For details, please view the data privacy policy of Vercel:
-				<a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer"
-					>https://vercel.com/legal/privacy-policy</a
-				>.
+				<a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">https://vercel.com/legal/privacy-policy</a>.
 			</p>
 			<p>
 				We use Vercel on the basis of Art. 6(1)(f) GDPR. We have a legitimate interest in the most reliable
@@ -412,9 +402,7 @@
 			</p>
 			<p>
 				For details, please view the data privacy policy of Hetzner:
-				<a href="https://www.hetzner.com/de/legal/privacy-policy/" target="_blank" rel="noopener noreferrer"
-					>https://www.hetzner.com/de/legal/privacy-policy/</a
-				>.
+				<a href="https://www.hetzner.com/de/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">https://www.hetzner.com/de/legal/privacy-policy/</a>.
 			</p>
 			<p>
 				We use Hetzner on the basis of Art. 6(1)(f) GDPR. We have a legitimate interest in the most reliable
@@ -451,14 +439,14 @@
 			<h3>Information about the responsible party (referred to as the &ldquo;controller&rdquo; in the GDPR)</h3>
 			<p>The data processing controller on this website is:</p>
 			<p>
-				Moritz Toppm&ouml;ller<br />
-				Nordhorner Str. 33<br />
-				33335 G&uuml;tersloh<br />
+				Moritz Toppm&ouml;ller<br>
+				Nordhorner Str. 33<br>
+				33335 G&uuml;tersloh<br>
 				Deutschland
 			</p>
 
 			<p>
-				Phone: +491707650817<br />
+				Phone: +491707650817<br>
 				E-mail: info@moritz-topp.de
 			</p>
 			<p>
@@ -636,17 +624,17 @@
 </template>
 
 <script setup lang="ts">
-	const { locale, t } = useI18n();
+	const { locale, t } = useI18n()
 
 	definePageMeta({
 		i18n: {
 			paths: {
-				en: "/privacy"
-			}
-		}
-	});
+				en: "/privacy",
+			},
+		},
+	})
 
 	useSeoMeta({
-		title: t("system.privacy")
-	});
+		title: t("system.privacy"),
+	})
 </script>

@@ -1,15 +1,20 @@
-import { defineOrganization } from "nuxt-schema-org/schema";
-import { defineNuxtConfig } from "nuxt/config";
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from "@tailwindcss/vite"
+import { defineOrganization } from "nuxt-schema-org/schema"
+import { defineNuxtConfig } from "nuxt/config"
 
 export default defineNuxtConfig({
 	colorMode: {
 		preference: "system",
 		storage: "sessionStorage",
 		dataValue: "theme",
-		storageKey: "nuxt-color-mode"
+		storageKey: "nuxt-color-mode",
 	},
 	css: ["~/assets/tailwind.css"],
+	eslint: {
+		config: {
+			standalone: false,
+		},
+	},
 	i18n: {
 		strategy: "prefix_except_default",
 		defaultLocale: "de",
@@ -19,27 +24,27 @@ export default defineNuxtConfig({
 		detectBrowserLanguage: {
 			useCookie: false,
 			alwaysRedirect: true,
-			fallbackLocale: "de"
+			fallbackLocale: "de",
 		},
 		locales: [
 			{ code: "de", language: "de-DE", name: "Deutsch", file: "de.json" },
-			{ code: "en", language: "en-US", name: "English", file: "en.json" }
-		]
+			{ code: "en", language: "en-US", name: "English", file: "en.json" },
+		],
 	},
 	modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon", "@nuxtjs/color-mode", "@nuxtjs/i18n", "@nuxtjs/seo"],
 	nitro: {
 		prerender: {
 			routes: ["/"],
-			crawlLinks: true
-		}
+			crawlLinks: true,
+		},
 	},
 	ogImage: {
-		enabled: false
+		enabled: false,
 	},
 	robots: {
 		blockNonSeoBots: true,
 		credits: false,
-		disallow: ["/_nuxt/*"]
+		disallow: ["/_nuxt/*"],
 	},
 	runtimeConfig: {
 		mail: {
@@ -48,8 +53,8 @@ export default defineNuxtConfig({
 			user: "",
 			pass: "",
 			to: "",
-			from: ""
-		}
+			from: "",
+		},
 	},
 	schemaOrg: {
 		identity: defineOrganization({
@@ -58,30 +63,30 @@ export default defineNuxtConfig({
 			logo: "/apple-touch-icon.png",
 			address: {
 				"@type": "PostalAddress",
-				streetAddress: "Nordhorner Str. 33",
-				addressLocality: "Gütersloh",
-				addressRegion: "NRW",
-				postalCode: "33335",
-				addressCountry: "DE"
+				"streetAddress": "Nordhorner Str. 33",
+				"addressLocality": "Gütersloh",
+				"addressRegion": "NRW",
+				"postalCode": "33335",
+				"addressCountry": "DE",
 			},
-			email: "info@moritz-topp.de"
-		})
+			email: "info@moritz-topp.de",
+		}),
 	},
 	site: {
 		url: "https://www.moritz-topp.de",
-		defaultLocale: "de"
+		defaultLocale: "de",
 	},
 	sitemap: {
 		cacheMaxAgeSeconds: 86400,
 		credits: false,
 		xslColumns: [{ label: "URL", width: "100%" }],
-		xslTips: false
+		xslTips: false,
 	},
 	typescript: {
-		typeCheck: true
+		typeCheck: true,
 	},
 	vite: {
-		plugins: [tailwindcss()]
+		plugins: [tailwindcss()],
 	},
-	compatibilityDate: "2025-10-16"
-});
+	compatibilityDate: "2025-10-16",
+})

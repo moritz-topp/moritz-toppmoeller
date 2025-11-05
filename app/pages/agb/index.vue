@@ -2,13 +2,19 @@
 	<div class="container">
 		<div class="prose">
 			<nav class="not-prose mb-4 flex flex-wrap gap-2">
-				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb">{{ t("system.terms") }}</NuxtLinkLocale>
-				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/av">{{
-					t("system.av")
-				}}</NuxtLinkLocale>
-				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/dsa">{{
-					t("system.dsa")
-				}}</NuxtLinkLocale>
+				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb">
+					{{ t("system.terms") }}
+				</NuxtLinkLocale>
+				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/av">
+					{{
+						t("system.av")
+					}}
+				</NuxtLinkLocale>
+				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/dsa">
+					{{
+						t("system.dsa")
+					}}
+				</NuxtLinkLocale>
 			</nav>
 
 			<h1>Allgemeine Geschäftsbedingungen</h1>
@@ -252,24 +258,24 @@
 			<h2>Anlage 1: Unterauftragnehmer</h2>
 			<p>Hetzner, Sitz, Verwendungszweck: Hosting & Infrastruktur</p>
 			<p>Vercel, Sitz, Verwendungszweck: Hosting & Infrastruktur</p>
-			<hr />
+			<hr>
 			<p>Stand 27.03.2024</p>
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
-	const { t } = useI18n();
+	const { t } = useI18n()
 
 	useSeoMeta({
-		title: t("system.terms")
-	});
+		title: t("system.terms"),
+	})
 
 	definePageMeta({
 		i18n: {
 			paths: {
-				en: "/terms"
-			}
-		}
-	});
+				en: "/terms",
+			},
+		},
+	})
 </script>

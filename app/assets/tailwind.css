@@ -7,7 +7,9 @@
 /* Enable daisyUI */
 @plugin "daisyui" {
 	/* Limit themes to light and dark with sensible defaults */
-	themes: light --default, dark --prefersdark;
+	themes:
+		light --default,
+		dark --prefersdark;
 	exclude: properties;
 }
 
@@ -18,12 +20,12 @@
 	color-scheme: light;
 
 	--color-primary: oklch(0.4893 0.1321 293.38);
-	--color-primary-content: oklch(95% 0 0 );
+	--color-primary-content: oklch(95% 0 0);
 	--color-secondary: oklch(0.6682 0.0883 276.34);
 	--color-secondary-content: oklch(5% 0 0);
 
 	--color-accent: oklch(0.5469 0.2021 1.74);
-	--color-accent-content: oklch(95% 0 0 );
+	--color-accent-content: oklch(95% 0 0);
 	--color-neutral: oklch(27.441% 0.013 253.041);
 	--color-neutral-content: oklch(95% 0 0);
 
@@ -56,12 +58,12 @@
 	color-scheme: dark;
 
 	--color-primary: oklch(0.4893 0.1321 293.38);
-	--color-primary-content: oklch(95% 0 0 );
+	--color-primary-content: oklch(95% 0 0);
 	--color-secondary: oklch(0.6682 0.0883 276.34);
 	--color-secondary-content: oklch(5% 0 0);
 
 	--color-accent: oklch(0.5469 0.2021 1.74);
-	--color-accent-content: oklch(95% 0 0 );
+	--color-accent-content: oklch(95% 0 0);
 	--color-neutral: oklch(27.441% 0.013 253.041);
 	--color-neutral-content: oklch(95% 0 0);
 
@@ -91,10 +93,16 @@
 
 /* Smooth scroll behavior */
 @layer base {
-	html { scroll-behavior: smooth; font-family: "Avenir Next", "Avenir", "Arial", "sans-serif"; }
+	html {
+		scroll-behavior: smooth;
+		font-family: "Avenir Next", "Avenir", "Arial", "sans-serif";
+	}
 }
 
 /* Disable transitions for reduced-motion users */
 @media (prefers-reduced-motion: reduce) {
-	.v-enter-active, .v-leave-active { transition: none !important; }
+	.v-enter-active,
+	.v-leave-active {
+		transition: none !important;
+	}
 }

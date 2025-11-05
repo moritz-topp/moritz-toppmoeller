@@ -2,16 +2,22 @@
 	<div class="container">
 		<div class="prose">
 			<nav class="not-prose mb-4 flex flex-wrap gap-2">
-				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb">{{ t("system.terms") }}</NuxtLinkLocale>
-				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb/av">{{ t("system.av") }}</NuxtLinkLocale>
-				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/dsa">{{
-					t("system.dsa")
-				}}</NuxtLinkLocale>
+				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb">
+					{{ t("system.terms") }}
+				</NuxtLinkLocale>
+				<NuxtLinkLocale class="btn btn-xs btn-primary" to="/agb/av">
+					{{ t("system.av") }}
+				</NuxtLinkLocale>
+				<NuxtLinkLocale class="btn btn-outline btn-xs btn-primary" to="/agb/dsa">
+					{{
+						t("system.dsa")
+					}}
+				</NuxtLinkLocale>
 			</nav>
 
 			<h1>Auftragverarbeitungsvertrag</h1>
 			<p>Zwischen dem Auftraggeber und</p>
-			<p>Moritz Toppmöller <br />Nordhorner Str. 33 <br />33335 Gütersloh</p>
+			<p>Moritz Toppmöller <br>Nordhorner Str. 33 <br>33335 Gütersloh</p>
 			<p>
 				nachfolgend "Auftragsverarbeiter" - (nachfolgend beide Parteien auch bezeichnet als „Partei“ oder
 				„Parteien“)
@@ -396,17 +402,17 @@
 </template>
 
 <script setup lang="ts">
-	const { t } = useI18n();
+	const { t } = useI18n()
 
 	definePageMeta({
 		i18n: {
 			paths: {
-				en: "/terms/dpa"
-			}
-		}
-	});
+				en: "/terms/dpa",
+			},
+		},
+	})
 
 	useSeoMeta({
-		title: t("system.av")
-	});
+		title: t("system.av"),
+	})
 </script>

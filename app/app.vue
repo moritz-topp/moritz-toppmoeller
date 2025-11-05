@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-base-200 min-h-screen">
+	<div class="min-h-screen bg-base-200">
 		<div class="flex flex-col md:flex-row">
 			<aside class="md:w-1/3">
 				<div class="relative top-0 h-64 overflow-hidden md:sticky md:h-screen">
@@ -8,21 +8,25 @@
 						alt="Hintergrundbild"
 						class="h-full w-full object-cover object-top md:object-center"
 						loading="eager"
-					/>
+					>
 				</div>
 			</aside>
 
-			<div class="bg-base-100 flex min-h-screen flex-1 flex-col md:w-2/3">
-				<header class="border-base-300 border-b px-6 py-8 text-center md:text-left">
+			<div class="flex min-h-screen flex-1 flex-col bg-base-100 md:w-2/3">
+				<header class="border-b border-base-300 px-6 py-8 text-center md:text-left">
 					<NuxtLinkLocale to="/" class="mx-auto block w-full max-w-5xl">
-						<h1 class="my-2 text-3xl font-bold md:text-4xl">Moritz Toppmöller</h1>
-						<p class="text-base opacity-80">{{ t("system.subtitle") }}</p>
+						<h1 class="my-2 text-3xl font-bold md:text-4xl">
+							Moritz Toppmöller
+						</h1>
+						<p class="text-base opacity-80">
+							{{ t("system.subtitle") }}
+						</p>
 					</NuxtLinkLocale>
 					<div class="mt-4 flex flex-wrap justify-center gap-2 md:justify-start">
 						<NuxtLink
 							v-for="link in profileLinks"
 							:key="link.id"
-							class="badge badge-outline badge-xl badge-secondary hover:text-primary hover:badge-primary inline-flex items-center gap-2 text-xs font-medium transition"
+							class="badge inline-flex items-center gap-2 badge-outline badge-xl text-xs font-medium transition badge-secondary hover:text-primary hover:badge-primary"
 							:href="link.href"
 							target="_blank"
 							:aria-label="link.id"
@@ -33,26 +37,32 @@
 					</div>
 				</header>
 
-				<main id="main" class="bg-base-200 flex-1 p-6">
+				<main id="main" class="flex-1 bg-base-200 p-6">
 					<div class="mx-auto w-full max-w-5xl">
 						<NuxtPage />
 					</div>
 				</main>
 
-				<footer class="border-base-300 border-t p-6 text-sm">
+				<footer class="border-t border-base-300 p-6 text-sm">
 					<div class="mx-auto w-full max-w-5xl">
 						<div class="flex flex-col items-center gap-6 text-center md:flex-row md:justify-between">
 							<div class="flex flex-col gap-2">
 								<nav class="flex flex-wrap gap-3">
-									<NuxtLinkLocale class="link link-hover hover:link-primary" to="/impressum">{{
-										t("system.imprint")
-									}}</NuxtLinkLocale>
-									<NuxtLinkLocale class="link link-hover hover:link-primary" to="/datenschutz">{{
-										t("system.privacy")
-									}}</NuxtLinkLocale>
-									<NuxtLinkLocale class="link link-hover hover:link-primary" to="/agb">{{
-										t("system.terms")
-									}}</NuxtLinkLocale>
+									<NuxtLinkLocale class="link link-hover hover:link-primary" to="/impressum">
+										{{
+											t("system.imprint")
+										}}
+									</NuxtLinkLocale>
+									<NuxtLinkLocale class="link link-hover hover:link-primary" to="/datenschutz">
+										{{
+											t("system.privacy")
+										}}
+									</NuxtLinkLocale>
+									<NuxtLinkLocale class="link link-hover hover:link-primary" to="/agb">
+										{{
+											t("system.terms")
+										}}
+									</NuxtLinkLocale>
 								</nav>
 							</div>
 
@@ -114,54 +124,54 @@
 </template>
 
 <script setup lang="ts">
-	const { t, locale } = useI18n();
-	const switchLocalePath = useSwitchLocalePath();
+	const { t, locale } = useI18n()
+	const switchLocalePath = useSwitchLocalePath()
 
 	useSeoMeta({
-		titleTemplate: "%s | " + t("system.title"),
-		description: t("system.subtitle") + " | " + t("system.description.part3")
-	});
+		titleTemplate: `%s | ${t("system.title")}`,
+		description: `${t("system.subtitle")} | ${t("system.description.part3")}`,
+	})
 
-	const colorMode = useColorMode();
-	const setTheme = (mode: "light" | "dark") => {
-		colorMode.preference = mode;
-	};
+	const colorMode = useColorMode()
+	function setTheme(mode: "light" | "dark") {
+		colorMode.preference = mode
+	}
 
 	const profileLinks = [
 		{
 			id: "LinkedIn",
 			href: "https://www.linkedin.com/in/moritz-toppm%C3%B6ller-2a66a7200/",
-			icon: "mdi:linkedin"
+			icon: "mdi:linkedin",
 		},
 		{
 			id: "Instagram",
 			href: "https://www.instagram.com/moritz.topp/",
-			icon: "mdi:instagram"
+			icon: "mdi:instagram",
 		},
 		{
 			id: "ORCID",
 			href: "https://orcid.org/0009-0000-6056-7402",
-			icon: "simple-icons:orcid"
+			icon: "simple-icons:orcid",
 		},
 		{
 			id: "ResearchGate",
 			href: "https://www.researchgate.net/profile/Moritz-Toppmoeller",
-			icon: "simple-icons:researchgate"
+			icon: "simple-icons:researchgate",
 		},
 		{
 			id: "GitHub",
 			href: "https://github.com/moritz-topp",
-			icon: "mdi:github"
+			icon: "mdi:github",
 		},
 		{
 			id: "GitLab",
 			href: "https://gitlab.ub.uni-bielefeld.de/moritz.toppmoeller",
-			icon: "mdi:gitlab"
+			icon: "mdi:gitlab",
 		},
 		{
 			id: "Uni Bielefeld (Profil)",
 			href: "https://ekvv.uni-bielefeld.de/pers_publ/publ/PersonDetail.jsp?personId=185865553",
-			icon: "mdi:school"
-		}
-	];
+			icon: "mdi:school",
+		},
+	]
 </script>
