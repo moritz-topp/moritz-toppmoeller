@@ -20,7 +20,7 @@
 		"@nuxtjs/seo": "3.3.0",
 		"@tailwindcss/vite": "4.1.18",
 		"nodemailer": "7.0.11",
-		"sass": "1.93.3",
+		"sass": "1.96.0",
 		"tailwindcss": "4.1.18"
 	},
 	"devDependencies": {
