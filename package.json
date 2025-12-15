@@ -29,7 +29,7 @@
 		"@tailwindcss/typography": "0.5.19",
 		"@types/nodemailer": "7.0.4",
 		"daisyui": "5.5.14",
-		"eslint": "9.39.1",
+		"eslint": "9.39.2",
 		"eslint-plugin-format": "1.1.0",
 		"eslint-plugin-tailwindcss": "4.0.0-beta.0",
 		"eslint-plugin-vuejs-accessibility": "2.4.1",
