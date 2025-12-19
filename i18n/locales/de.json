@@ -28,15 +28,6 @@
 			}
 		}
 	},
-	"events": {
-		"title": "Messen & Tagungen",
-		"items": {
-			"future": {
-				"text": "Weitere Fachmessen und Tagungen in Planung",
-				"subline": "Termine & Orte folgen"
-			}
-		}
-	},
 	"experience": {
 		"title": "Erfahrung",
 		"items": {

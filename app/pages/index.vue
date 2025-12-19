@@ -9,7 +9,6 @@
 		<SectionCard v-bind="content.education" />
 		<SectionCard v-bind="content.experience" />
 		<SectionCard v-bind="content.publications" />
-		<SectionCard v-bind="content.events" />
 
 		<div class="grid gap-4 md:grid-cols-2 md:gap-6">
 			<SectionCard v-bind="content.languages" />
@@ -79,18 +78,6 @@
 					text: t("publications.papers.microgravity.title"),
 					subline: t("publications.papers.microgravity.subline"),
 					href: "https://doi.org/10.4119/unibi/3002766",
-				},
-			],
-		},
-		events: {
-			title: t("events.title"),
-			icon: "mdi:calendar-star",
-			itemIcon: "mdi:calendar-blank-outline",
-			items: [
-				{
-					id: "future",
-					text: t("events.items.future.text"),
-					subline: t("events.items.future.subline"),
 				},
 			],
 		},

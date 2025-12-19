@@ -28,15 +28,6 @@
 			}
 		}
 	},
-	"events": {
-		"title": "Trade fairs & conferences",
-		"items": {
-			"future": {
-				"text": "Further trade fairs and conferences in planning",
-				"subline": "Dates & locations to follow"
-			}
-		}
-	},
 	"experience": {
 		"title": "Experience",
 		"items": {
