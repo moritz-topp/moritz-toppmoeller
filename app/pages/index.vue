@@ -49,6 +49,11 @@
 			itemIcon: "mdi:hexagon-multiple-outline",
 			items: [
 				{
+					id: "temi",
+					text: t("experience.items.temi.text"),
+					subline: t("experience.items.temi.subline"),
+				},
+				{
 					id: "hiwi",
 					text: t("experience.items.hiwi.text"),
 					subline: t("experience.items.hiwi.subline"),

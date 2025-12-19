@@ -40,9 +40,13 @@
 	"experience": {
 		"title": "Experience",
 		"items": {
+			"temi": {
+				"text": "Technical staff",
+				"subline": "Digital Medicine Working Group - OWL Medical Faculty - Bielefeld University (2025-present)"
+			},
 			"hiwi": {
 				"text": "Research assistant",
-				"subline": "Digital Medicine Working Group - OWL Medical Faculty - Bielefeld University (2025-present)"
+				"subline": "Digital Medicine Working Group - OWL Medical Faculty - Bielefeld University (2025)"
 			},
 			"freelance": {
 				"text": "Freelancer in web design, IT consulting & hosting solutions",

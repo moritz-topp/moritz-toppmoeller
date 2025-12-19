@@ -40,9 +40,13 @@
 	"experience": {
 		"title": "Erfahrung",
 		"items": {
+			"temi": {
+				"text": "Technischer Mitarbeiter",
+				"subline": "AG Digitale Medizin - Medizinische Fakultät OWL - Universität Bielefeld (2025-heute)"
+			},
 			"hiwi": {
 				"text": "Wissenschaftliche Hilfskraft",
-				"subline": "AG Digitale Medizin - Medizinische Fakultät OWL - Universität Bielefeld (2025-heute)"
+				"subline": "AG Digitale Medizin - Medizinische Fakultät OWL - Universität Bielefeld (2025)"
 			},
 			"freelance": {
 				"text": "Selbständig mit Webgestaltung, IT-Beratung & Hosting-Lösungen",
