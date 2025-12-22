@@ -37,8 +37,8 @@ importers:
         version: 4.1.18
     devDependencies:
       '@antfu/eslint-config':
-        specifier: 6.7.1
-        version: 6.7.1(@vue/compiler-sfc@3.5.26)(eslint-plugin-format@1.1.0(eslint@9.39.2(jiti@2.6.1)))(eslint-plugin-vuejs-accessibility@2.4.1(eslint@9.39.2(jiti@2.6.1)))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
+        specifier: 6.7.3
+        version: 6.7.3(@vue/compiler-sfc@3.5.26)(eslint-plugin-format@1.1.0(eslint@9.39.2(jiti@2.6.1)))(eslint-plugin-vuejs-accessibility@2.4.1(eslint@9.39.2(jiti@2.6.1)))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
       '@nuxt/eslint':
         specifier: 1.12.1
         version: 1.12.1(@typescript-eslint/utils@8.50.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-sfc@3.5.26)(eslint-plugin-format@1.1.0(eslint@9.39.2(jiti@2.6.1)))(eslint@9.39.2(jiti@2.6.1))(magicast@0.5.1)(typescript@5.9.3)(vite@7.3.0(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.30.2)(sass@1.97.0)(terser@5.44.1)(yaml@2.8.2))
@@ -75,8 +75,8 @@ importers:
 
 packages:
 
-  '@antfu/eslint-config@6.7.1':
-    resolution: {integrity: sha512-+8GIMmOfrtAVXoqVK9sfovAlHPkp35ilntqZ6XloO/Rty36gOxaa8dvwCh8/eqwwIsloA/hDJo3Ef95TRbdyEg==}
+  '@antfu/eslint-config@6.7.3':
+    resolution: {integrity: sha512-0tYYzY59uLnxWgbP9xpuxpvodTcWDacj439kTAJZB3sn7O0BnPfVxTnRvleGYaKCEALBZkzdC/wCho9FD7ICLw==}
     hasBin: true
     peerDependencies:
       '@eslint-react/eslint-plugin': ^2.0.1
@@ -3352,6 +3352,16 @@ packages:
       typescript:
         optional: true
 
+  eslint-plugin-import-lite@0.4.0:
+    resolution: {integrity: sha512-My0ReAg8WbHXYECIHVJkWB8UxrinZn3m72yonOYH6MFj40ZN1vHYQj16iq2Fd8Wrt/vRZJwDX2xm/BzDk1FzTg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: '>=9.0.0'
+      typescript: '>=4.5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
   eslint-plugin-import-x@4.16.1:
     resolution: {integrity: sha512-vPZZsiOKaBAIATpFE2uMI4w5IRwdv/FpQ+qZZMR4E+PeOcM4OeoEbqxRMnywdxP19TyB/3h6QBB0EWon7letSQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -5847,7 +5857,7 @@ packages:
 
 snapshots:
 
-  '@antfu/eslint-config@6.7.1(@vue/compiler-sfc@3.5.26)(eslint-plugin-format@1.1.0(eslint@9.39.2(jiti@2.6.1)))(eslint-plugin-vuejs-accessibility@2.4.1(eslint@9.39.2(jiti@2.6.1)))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)':
+  '@antfu/eslint-config@6.7.3(@vue/compiler-sfc@3.5.26)(eslint-plugin-format@1.1.0(eslint@9.39.2(jiti@2.6.1)))(eslint-plugin-vuejs-accessibility@2.4.1(eslint@9.39.2(jiti@2.6.1)))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
       '@antfu/install-pkg': 1.1.0
       '@clack/prompts': 0.11.0
@@ -5865,7 +5875,7 @@ snapshots:
       eslint-merge-processors: 2.0.0(eslint@9.39.2(jiti@2.6.1))
       eslint-plugin-antfu: 3.1.1(eslint@9.39.2(jiti@2.6.1))
       eslint-plugin-command: 3.4.0(eslint@9.39.2(jiti@2.6.1))
-      eslint-plugin-import-lite: 0.3.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
+      eslint-plugin-import-lite: 0.4.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
       eslint-plugin-jsdoc: 61.5.0(eslint@9.39.2(jiti@2.6.1))
       eslint-plugin-jsonc: 2.21.0(eslint@9.39.2(jiti@2.6.1))
       eslint-plugin-n: 17.23.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
@@ -9616,6 +9626,12 @@ snapshots:
       synckit: 0.11.11
 
   eslint-plugin-import-lite@0.3.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3):
+    dependencies:
+      eslint: 9.39.2(jiti@2.6.1)
+    optionalDependencies:
+      typescript: 5.9.3
+
+  eslint-plugin-import-lite@0.4.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3):
     dependencies:
       eslint: 9.39.2(jiti@2.6.1)
     optionalDependencies:
