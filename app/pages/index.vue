@@ -75,6 +75,16 @@
 			itemIcon: "mdi:file-document-outline",
 			items: [
 				{
+					text: t("publications.papers.robot-gravity.title"),
+					subline: t("publications.papers.robot-gravity.subline"),
+					href: "https://doi.org/10.3233/SHTI260827",
+				},
+				{
+					text: t("publications.papers.ehds-scg.title"),
+					subline: t("publications.papers.ehds-scg.subline"),
+					href: "https://doi.org/10.3233/SHTI260828",
+				},
+				{
 					text: t("publications.papers.microgravity.title"),
 					subline: t("publications.papers.microgravity.subline"),
 					href: "https://doi.org/10.4119/unibi/3002766",
