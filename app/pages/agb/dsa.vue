@@ -196,7 +196,7 @@
 	})
 
 	useSeoMeta({
-		title: t("system.dsa"),
+		title: () => t("system.dsa"),
 	})
 
 	const dsa = ref<DsaPayload>({

@@ -1,5 +1,5 @@
-import type { H3Event } from "h3"
 import nodemailer from "nodemailer"
+import { createError, defineEventHandler, readValidatedBody, useRuntimeConfig } from "nuxt/server"
 
 const runtimeConfig = useRuntimeConfig()
 
@@ -13,14 +13,22 @@ const transporter = nodemailer.createTransport({
 	},
 })
 
-export default defineEventHandler(async (event: H3Event) => {
-	const body = await readBody<DsaPayload>(event)
-	if (!body?.info || !body?.address || !body?.name) {
-		throw createError({
-			statusCode: 400,
-			statusMessage: "Bad Request",
-		})
-	}
+export default defineEventHandler(async (event) => {
+	const body = await readValidatedBody(event, (data) => {
+		if (
+			!data || typeof data !== "object"
+			|| !("info" in data) || typeof data.info !== "string" || !data.info.trim()
+			|| !("address" in data) || typeof data.address !== "string" || !data.address.trim()
+			|| !("name" in data) || typeof data.name !== "string" || !data.name.trim()
+		) {
+			throw createError({
+				status: 400,
+				statusText: "Bad Request",
+			})
+		}
+
+		return { info: data.info, address: data.address, name: data.name }
+	})
 
 	// Send mail
 	await transporter.sendMail({

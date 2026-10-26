@@ -635,6 +635,6 @@
 	})
 
 	useSeoMeta({
-		title: t("system.privacy"),
+		title: () => t("system.privacy"),
 	})
 </script>

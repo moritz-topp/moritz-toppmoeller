@@ -268,7 +268,7 @@
 	const { t } = useI18n()
 
 	useSeoMeta({
-		title: t("system.terms"),
+		title: () => t("system.terms"),
 	})
 
 	definePageMeta({

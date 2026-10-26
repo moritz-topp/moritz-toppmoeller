@@ -124,7 +124,12 @@
 </template>
 
 <script setup lang="ts">
-	const { locale } = useI18n()
+	const { t, locale } = useI18n()
+
+	useSeoMeta({
+		title: () => t("system.imprint"),
+	})
+
 	definePageMeta({
 		i18n: {
 			paths: {

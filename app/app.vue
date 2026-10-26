@@ -126,10 +126,13 @@
 <script setup lang="ts">
 	const { t, locale } = useI18n()
 	const switchLocalePath = useSwitchLocalePath()
+	const localeHead = useLocaleHead()
+
+	useHead(() => localeHead.value)
 
 	useSeoMeta({
-		titleTemplate: `%s | ${t("system.title")}`,
-		description: `${t("system.subtitle")} | ${t("system.description.part3")}`,
+		titleTemplate: computed(() => `%s | ${t("system.title")}`),
+		description: () => t("nuxtSiteConfig.description"),
 	})
 
 	const colorMode = useColorMode()

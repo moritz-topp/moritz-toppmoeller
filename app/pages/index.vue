@@ -21,7 +21,7 @@
 	const { t } = useI18n()
 
 	useSeoMeta({
-		titleTemplate: t("system.title"),
+		titleTemplate: computed(() => t("system.title")),
 	})
 
 	const content = {

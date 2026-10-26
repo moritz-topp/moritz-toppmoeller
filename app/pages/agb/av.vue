@@ -413,6 +413,6 @@
 	})
 
 	useSeoMeta({
-		title: t("system.av"),
+		title: () => t("system.av"),
 	})
 </script>

@@ -1,6 +1,7 @@
 import tailwindcss from "@tailwindcss/vite"
 import { defineOrganization } from "nuxt-schema-org/schema"
 import { defineNuxtConfig } from "nuxt/config"
+import deMessages from "./i18n/locales/de.json" with { type: "json" }
 
 export default defineNuxtConfig({
 	colorMode: {
@@ -14,6 +15,18 @@ export default defineNuxtConfig({
 		config: {
 			standalone: false,
 		},
+	},
+	fonts: {
+		families: [
+			{ name: "Avenir Next", provider: "none" },
+			{
+				name: "Nunito Sans",
+				provider: "bunny",
+				global: true,
+				preload: false,
+				weights: [400, 500, 600, 700],
+			},
+		],
 	},
 	i18n: {
 		strategy: "prefix_except_default",
@@ -37,14 +50,12 @@ export default defineNuxtConfig({
 		},
 	},
 	modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon", "@nuxtjs/color-mode", "@nuxtjs/i18n", "@nuxtjs/seo"],
-	nitro: {
-		prerender: {
-			routes: ["/"],
-			crawlLinks: true,
-		},
-	},
 	ogImage: {
 		enabled: false,
+	},
+	prerender: {
+		routes: ["/", "/robots.txt"],
+		crawlLinks: true,
 	},
 	robots: {
 		blockNonSeoBots: true,
@@ -77,6 +88,7 @@ export default defineNuxtConfig({
 		}),
 	},
 	site: {
+		...deMessages.nuxtSiteConfig,
 		defaultLocale: "de-DE",
 		url: "https://www.moritz-topp.de",
 		trailingSlash: false,
@@ -88,6 +100,7 @@ export default defineNuxtConfig({
 		xslTips: false,
 		zeroRuntime: true,
 	},
+	skewProtection: false,
 	typescript: {
 		typeCheck: "build",
 	},

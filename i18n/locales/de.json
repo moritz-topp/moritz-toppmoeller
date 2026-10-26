@@ -1,4 +1,8 @@
 {
+	"nuxtSiteConfig": {
+		"name": "Moritz Toppmöller",
+		"description": "Moritz Toppmöller: Forschung in Digitaler Medizin und Medizinischer Informatik sowie IT-Beratung, Webgestaltung und Hosting."
+	},
 	"system": {
 		"title": "Moritz Toppmöller — Medizinische Informatik & IT-Beratung",
 		"subtitle": "Digitale Medizin & Medizinische Informatik - IT-Beratung, Hosting",
