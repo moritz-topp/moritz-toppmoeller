@@ -73,15 +73,19 @@
 	"publications": {
 		"title": "Veröffentlichungen",
 		"papers": {
-			"robot-gravity": {
+			"bmc2026-gravity": {
+				"title": "Research note on gravity artifact reduction in IMU signals using Madgwick orientation estimation",
+				"subline": "Journal-Artikel · BMC Research Notes (2026)"
+			},
+			"icimth2026-robot": {
 				"title": "Robotic-Arm-Based Validation of Orientation Estimation Filters for Gravity Artifact Removal in 6DoF Sensors",
 				"subline": "Konferenz-Artikel · IOS Press (2026)"
 			},
-			"ehds-scg": {
+			"icimth2026-ehds-scg": {
 				"title": "Integrating Seismocardiographic Signals into Standardized Interfaces to Merge into the European Health Data Space (EHDS)",
 				"subline": "Konferenz-Artikel · IOS Press (2026)"
 			},
-			"microgravity": {
+			"bachelor-thesis": {
 				"title": "Development of an Automated Image Processing Method for the Qualitative and Quantitative Analysis of Movements in Videos of People Under Microgravity Conditions",
 				"subline": "Bachelorarbeit · Universität Bielefeld (2025)"
 			}
