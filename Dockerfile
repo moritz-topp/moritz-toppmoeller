@@ -12,6 +12,7 @@ RUN pnpm run build
 FROM node:24-alpine AS prod
 
 WORKDIR /app
+ENV TZ=Europe/Berlin
 COPY --from=build /app/.output/ /app/
 
 EXPOSE 3000
